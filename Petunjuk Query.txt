@@ -1,0 +1,60 @@
+==============================================
+= LIST PERINTAH / QUERY YANG BISA DIJALANKAN =
+==============================================
+ISI
+UBAH
+HAPUS
+TAMPIL
+
+=====================
+= FORMAT TIAP QUERY =
+=====================
+ISI - [nama table] - [Primary Key] - [Value] - [Value] - [Value] 
+UBAH - [nama table] - [Primary Key] - [Value] - [Value] - [Value] 
+HAPUS - [nama table] - [Primary Key]
+TAMPIL - [nama table]
+
+(Untuk double query menyesuaikan)
+
+=======================================
+= LIST PERINTAH / QUERY YANG BERHASIL =
+=======================================
+ISI menu M016 Minuman Greentea_1Liter 70000;
+ISI UBAH menu M016 Minuman Greentea_1Liter 75000;
+ISI HAPUS menu M004 Minuman Fanta 5000;
+ISI TAMPIL menu M003 Minuman Fanta 5000;
+ISI ISI menu M005 Minuman Sprite 4000;
+UBAH pelanggan P002 WidhiDamarAnandito M002 081111111112;
+UBAH ISI pelanggan P003 BintangIchsanul M003 081111111113;
+UBAH UBAH pelanggan P005 MushviatiFurqon M003 081111111115;
+HAPUS menu M012;
+HAPUS ISI pelanggan P009 AzzahraKhoirunnisa M001 081212341234;
+HAPUS TAMPIL pelanggan P010;
+TAMPIL menu;
+TAMPIL pelanggan;
+TAMPIL pelanggan menu;
+TAMPIL ISI pelanggan P009 AzzahraKhoirrr M001 081212341234;
+
+====================================
+= LIST PERINTAH / QUERY YANG GAGAL =
+====================================
+TAMPIL menu (tidak ada EOP)
+ISI men M005 Minuman Sprite 5000; (table yang dituju tidak ada)
+ISI menu M006 Minuman Cola 5000 Ucok; (query yang berlebihan)
+ISI menu M006 Minuman Cola; (query yang kurang)
+UBAH TAMPIL pelanggan P004 SalmaHaerrr M001 081111111114; (error dikarenakan 2 query bisa dilaksanakan)
+UBAH HAPUS pelanggan P005 MushviatiF M001 081111111115; (error dikarenakan 2 query bisa dilaksanakan)
+UBAH UBAH pelanggan P005 MushviatiFurqon M006 081111111115; (error dikarenakan kode Menu yang dituju tidak ada dalam table Menu)
+HAPUS menu M001; (tidak bisa dihapus karena menyangkut di table Pelanggan)
+HAPUS menu M006; (tidak bisa dihapus karena data tidak ada)
+HAPUS UBAH pelanggan P009 AzzahraKhoirrr M003 081212341234; (error dikarenakan 2 query bisa dilaksanakan)
+HAPUS TAMPIL pelanggan P008; (error dikarenakan 2 querry bisa dilaksanakan)
+TAMPIL pelangga menu; (typo table pelanggan)
+TAMPIL customer; (typo table customer)
+tampil pelanggan; (lowercase query, perintah harus UPPERCASE)
+
+=======================
+= KELUAR DARI PROGRAM =
+=======================
+jangan lupa bahagia hari ini;
+quit;
